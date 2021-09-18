@@ -1,0 +1,193 @@
+
+.container{
+     width: 100vw ;
+     height: 100vh ; 
+     background-color: #1c1c1c; 
+     overflow: hidden; 
+     position: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 0;
+     left: 0;
+     z-index: -10;
+}
+
+.logoContainer{
+     width: 100vw;
+     height: 100vh;
+     color: #fff;
+     padding-top: 10vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+.logo{
+     display: block;
+     font-size: 10vw;
+     font-weight: 900;
+     margin-top: 10vh;
+}
+
+.forgroundContianer{
+     width: 100vw;
+     height: 100vh;
+     background-color: #1c1c1c77;
+     position: fixed;
+     z-index: -9;
+}
+
+.logoContainer p{
+     margin-top: 7vh;
+}
+
+.title{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.title p{
+     transition: all .5s ease-out;
+}
+
+.title p:hover{
+     transform: translateY(-30px);
+}
+
+.title h5{
+     font-size: 2vw;
+     font-weight: 100;
+     transition: all .5s ease-out;
+}
+
+.title h5:hover{
+     letter-spacing: .4vw;
+}
+
+.Title_dis{
+     word-spacing: .4vw;
+     letter-spacing: .15vw;
+     text-align: center;
+}
+
+.downIcon{
+     margin-top: 20vh;
+     font-size: 4vw;
+     animation: downIconAnim 2s ease-out reverse infinite;
+}
+
+.d{
+     animation: d_anim .6s ease-out;
+     /* transition: all 8s ease-out; */
+}
+
+.t{
+     animation: t_anim .6s ease-out;
+     /* transition: all 8s ease-out; */
+}
+
+.n{
+     animation: n_anim .6s ease-out;
+     /* transition: all 8s ease-out; */
+}
+
+.downIconContainer{
+     width: 4vw;
+     height:inherit;
+}
+
+.scrollDownToContainer{
+     width: 1vw;
+     height: 1vw;
+     position:absolute;
+     z-index: 10;
+     top: 100vh;
+}
+
+@media (orientation:landscape) {
+     .video{
+          width: 100%;
+     }    
+}
+
+@media (orientation:portrait) {
+     .video{
+          height: 100%;
+     }
+
+     .logo{
+          font-size: 25vw;
+          margin-top: 20vh;
+     }
+
+     .title h5{
+          font-size: 5vw;
+     }
+
+     .downIcon{
+          margin-top: 20vh;
+          font-size: 10vw;
+     }
+     .downIconContainer{
+          width: 10vw;
+     }
+}
+
+/* animation */
+
+@keyframes t_anim {
+     from {
+          transform: rotateY(-180deg);
+          opacity: 0;
+     }
+
+     to{
+          transform:  rotateY(0deg);
+          opacity: 1;
+     }
+}
+
+@keyframes n_anim {
+     from {
+          transform:translateX(-15vw) rotateY(180deg);
+          opacity: 0;
+     }
+
+     to{
+          transform: translateX(0vw) rotateY(0deg);
+          opacity: 1;
+     }
+}
+
+@keyframes d_anim {
+     from {
+          transform:translateX(15vw) rotateY(-180deg);
+          opacity: 0;
+     }
+
+     to{
+          transform: translateX(0vw) rotateY(0deg);
+          opacity: 1;
+     }
+}
+
+@keyframes downIconAnim {
+     0% {
+          transform: translateY(7vh);
+          opacity: 0;
+     }
+
+     50%{
+          opacity: 1;
+     }
+
+     100% {
+          transform: translateY(0vh);
+          opacity: 0;
+     }
+}
+

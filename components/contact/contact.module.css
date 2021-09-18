@@ -1,0 +1,47 @@
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.leftContant{
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+}
+
+.leftContant h1{
+    margin: 50px 10px 10px 50px;
+    font-size: 4vw;
+}
+
+.contantGrid{
+    width: 100%;
+    padding:70px 0 0 50px;
+}
+.contantGrid table{
+    table-layout:inherit;
+    text-align:left;
+}
+
+.contantGrid td,
+.contantGrid tr{
+    vertical-align: top;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.rightContact{
+    width: 45%;
+}
+
+@media (orientation:portrait) {
+    .container{
+        flex-direction: column;
+    }
+    .rightContact{
+        width: 95%;
+    }
+}

@@ -1,0 +1,152 @@
+.container{
+    padding: 10vh 0 10vh 0;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1{
+    font-size: 3vw;
+    word-spacing: .7vw;
+    transition: all .4s ease-out;
+}
+
+.container h1:hover{
+    letter-spacing: .5vw;
+    word-spacing: 1vw;
+}
+
+.container p{
+    margin-top: 8vh;
+    text-align: center;
+    width: 70vw;
+    font-size: 1.2vw;
+    color: #5c5c5c;
+    text-justify:inherit;
+    font-weight: 100;
+    transition: all .2s ease-out;
+}
+
+.container p:hover{
+    letter-spacing: .1vw;
+    word-spacing: .2vw;
+}
+
+.teamContainer{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.teamCard{
+    width: 15vw;
+    height: 40vh;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 6px 10px #00000023;
+    margin: 2vw;
+    border: .5px solid rgba(83, 83, 83, 0.151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamCard:hover{
+    box-shadow: 5px 10px 15px #00000023;
+}
+
+.teamProfile{
+    width: 8vw;
+    height: 8vw;
+    box-shadow: 3px 6px 5px #0000001e;
+    border-radius: 100px;
+    border: 1px solid #1c1c1c38;
+    transition:all .8s ease-out;
+    overflow: hidden;
+}
+
+.teamProfile image{
+    width: 120px;
+    height: 120px;
+}
+
+.name{
+    margin-top: 4vh;
+    font-size: 1.5vw;
+    font-weight: 800;
+    transition: all 1s ease-out;
+}
+
+.teamCard:hover{
+    letter-spacing: .2vw;
+}
+
+.profile{
+    margin-top: 2vh;
+    font-size: 1vw;
+    color: #3b3b3b;
+    transition: all 1s ease-out;
+}
+
+.profile:hover{
+    letter-spacing: .2vw;
+}
+
+.teamCard:hover .teamProfile{
+    width: 12vw;
+    height: 10vw;
+    box-shadow: 5px 8px 5px #0000002d;
+}
+
+@media (orientation:landscape) {
+    
+}
+
+@media (orientation:portrait) {
+    .container h1{
+        font-size: 10vw;
+        word-spacing: 2vw;
+    }
+
+    .container p{
+        margin-top: 5vh;
+        width: 90vw;
+        font-size: 3vw;
+    }
+
+    .container{
+        padding: 5vh 0 8vh 0;
+    }
+    .teamContainer{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .teamCard{
+        width: 40vw;
+        height: 30vh;
+        margin: 5vw 2vh;
+    }
+    
+    .teamProfile{
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .teamCard:hover .teamProfile{
+        width: 30vw;
+        height: 25vw;
+    }
+
+    .name{
+        font-size: 4vw;
+        letter-spacing: .2vw;
+    }
+
+    .profile{
+        margin-top: 1vh;
+        font-size: 3vw;
+        letter-spacing: .2vw;
+    }
+}

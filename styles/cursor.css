@@ -1,0 +1,40 @@
+/* cursor style */
+#cursor {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  position: fixed;
+  background-color: red;
+  pointer-events: none;
+  opacity: 1;
+  animation: cursorAnim 0.5s infinite alternate;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+  z-index: 111;
+}
+
+/* expand are splash when clicked */
+.expand {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  position: fixed;
+  visibility: hidden;
+  background-color: red;
+  pointer-events: none;
+  z-index: 110;
+}
+
+/* animated the expand from small to big */
+@keyframes expandAnim {
+  from {
+    transform: scale(0);
+    opacity: 0.7;
+    visibility: visible;
+  }
+  to {
+    transform: scale(5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+

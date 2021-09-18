@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  padding-top: 15vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.container h1 {
+  font-size: 3vw;
+  font-weight: 900;
+  word-spacing: 1vw;
+  transition: all 2 ease-out;
+}
+
+.container h1:hover {
+  letter-spacing: 0.5vw;
+}
+
+.container p {
+  font-size: 1.3vw;
+  margin-top: 5vh;
+  color: rgb(99, 98, 98);
+}
+
+.taskContainer {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5vw;
+  width: 20vw;
+  height: 20vw;
+}
+
+@media (orientation: portrait) {
+  .container {
+    padding-top: 5vh;
+  }
+
+  .container h1 {
+    font-size: 10vw;
+  }
+
+  .taskContainer {
+    margin-top: 5vh;
+    grid-template-columns: 50% 50%;
+  }
+
+  .task {
+    width: 40vw;
+    height: 60vw;
+  }
+
+  .task h1{
+      font-size: 8vw;
+  }
+
+  .task p{
+      font-size: 2vw;
+  }
+
+  .container P {
+    font-size: 3vw;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+  }
+}

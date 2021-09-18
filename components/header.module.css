@@ -1,0 +1,134 @@
+
+.container{
+    position:fixed;
+    width: 100vw;
+    height: fit-content;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo{
+    font-size: 1.4vw;
+    font-weight: 800;
+    padding: 10px;
+    word-spacing: .4vw;
+    cursor: none;
+    transition: all .4s ease-out;
+}
+
+.logo:hover{
+    letter-spacing: .4vw;
+}
+
+li.list_active{
+    display: inline-block;
+    font-size: 1vw;
+    color: #1c1c1c;
+    font-weight: 600;
+    padding: 10px;
+    margin: 0px 10px;
+    transition: all .4s ease-out;
+}
+
+.list_active:hover{
+    font-size: 1.2vw;
+    letter-spacing: .2vw;
+}
+
+li.list {
+    display: inline-block;
+    font-size: 1vw;
+    padding: 10px;
+    margin: 0px 10px;
+    color: #818181;
+    transition: all .4s ease-out;
+}
+
+.list:hover{
+    font-size: 1.2vw;
+    color: #353535;
+    letter-spacing: .2vw;
+}
+
+
+.contact{
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #2c2c2c;
+    transition: all .4s ease-out;
+}
+
+.contact:hover{
+    font-size: 1.5vw;
+    color: #1c1c1c;
+    font-weight: 500;
+    letter-spacing: .3vw;
+}
+
+@media (orientation:landscape) {
+    .menuIcon{
+        display: none;
+    }
+}
+
+@media (orientation:portrait) {
+
+    .ul{
+        text-align:center;
+    }
+
+    .ul li{
+        display:block;
+        font-size:8vw;
+        text-transform:uppercase;
+        margin:4vh 0vh;
+        letter-spacing: 2vw;
+    }
+    .ul li:hover,
+    .ul li:active{
+        font-size:8vw;
+        letter-spacing: 2.5vw;
+    }
+    .contact{
+        display: none;
+    }
+    .logo{
+        font-size: 4vw;
+        margin-left: 5vw;
+    }
+    nav.nav{
+       justify-content: space-between;
+    }
+    .container{
+        height: 6vh;
+    }
+    .menuIcon{
+        font-size: 6vw;
+        float: right;
+        margin-right: 7vw;
+    }
+    .menuModal{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .hideInMobile{
+        display:none;
+    }
+}
+

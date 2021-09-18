@@ -1,0 +1,42 @@
+.titleStyle{
+    color: #fff;
+    font-size: 7vw;
+    word-spacing: .8vw;
+    animation: letterAnim .5s ease-out;
+    transition: all .5s ease-out;
+    padding: 3px;
+}
+
+.titleStyle:hover{
+    transform: translateY(-30px);
+}
+
+@media (orientation:portrait) {
+    .titleStyle{
+        font-size: 14vw;
+        word-spacing: 1vw;
+    }
+    .titleBlank{
+        width: 8vw;
+    }
+}
+
+@media (orientation:landscape) {
+    .titleBlank{
+        width: 4vw;
+    }
+}
+
+
+@keyframes letterAnim {
+    0%{
+        opacity: 0;
+        padding: 10px;
+        transform: translateY(-400px);
+    }
+    100%{
+        opacity: 1;
+        padding: 3px;
+        transform: translateY(0px);
+    }
+}

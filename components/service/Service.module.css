@@ -1,0 +1,57 @@
+.container{
+    animation: downAnim .4s ease-out;
+    position: relative;
+}
+
+.headImageContainer{
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    z-index: -10;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.title{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    width: 100vw;
+    height: 10vh;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (orientation:landscape) {
+    .headImageContainer{
+        background-image: url("../../public/img/serviceLandscape.jpg");
+        background-position: center;
+    }
+}
+
+@media (orientation:portrait) {
+    .headImageContainer{
+        background-image: url("../../public/img/servicePortrait.jpg");
+        background-position: center;
+    }
+}
+
+@keyframes downAnim  {
+    0%{
+        transform: translateY(1000px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

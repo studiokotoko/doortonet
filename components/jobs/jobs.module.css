@@ -1,0 +1,122 @@
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobsLeftContainer h1:hover{
+    word-spacing: .8vw;
+    letter-spacing: .2vw;        
+}
+
+.jobsLeftContainer p:hover{
+    word-spacing: .4vw;
+    letter-spacing: .1vw;       
+}
+
+.jobsLeftContainer h1{
+    margin: 4vh 0;
+    font-size: 3.5vw;
+    word-spacing: .5vw;
+    transition: all .2s ease-out;
+}
+.jobsLeftContainer p{
+    margin: 2vh 0 4vh 0;
+    font-size: 1.3vw;
+    color: #a0a0a0;
+    font-weight: 100;
+    transition: all .2s ease-out;
+}
+
+.jobsRightContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (orientation:landscape) {
+    .jobsLeftContainer{
+        padding: 15vh 0 0 5vw;
+        width: 45%;
+        animation: enterFromRight .4s ease-out;
+    }
+    .jobsRightContainer{
+        width: 45%;
+        animation: enterFromLeft .4s ease-out;
+        padding-top: 15vh;
+    }
+    .image{
+        margin-top: 80px;
+        padding: 50px 10px 10px 10px;
+        background-color: rgb(247, 247, 247);
+        border: 1px solid rgba(105, 105, 105, 0.089);
+        box-shadow: 4px 8px 15px #00000025;
+        overflow: hidden;
+        transition: all .2s ease-out;
+    }
+
+    .image:hover{
+        background-color: rgb(243, 243, 243);
+        box-shadow: 2px 4px 15px #00000025;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+
+@media (orientation:portrait) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        animation: mobileContainerAnim .8s ease-out;
+    }
+    .jobsLeftContainer{
+        text-align: center;
+        width: 90%;
+    }
+
+    .jobsLeftContainer h1{
+        margin: 4vh 0;
+        font-size: 8vw;
+    }
+    .jobsLeftContainer p{
+        margin: 2vh 0 4vh 0;
+        font-size: 4vw;
+    }
+
+    .jobsRightContainer{
+        width: 90%;
+        padding-top: 5vh;
+    }
+    .image{
+        display: none;
+    }
+}
+
+@keyframes mobileContainerAnim {
+    0%{
+        transform: translateY(100vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes enterFromRight {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes enterFromLeft {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}

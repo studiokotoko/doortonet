@@ -1,0 +1,62 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.subContain{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 10px 20px #1c1c1c46;
+}
+
+.subContain p{
+    display: block;
+    padding: 30px;
+    font-size: 1.2vw;
+    color: #1c1c1c;
+}
+
+.subContain button{
+    margin-top: 50px;
+    width: 50%;
+    height: 15%;
+    border:none;
+    font-size: 2.3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: rgb(255, 196, 0);
+    display: block;
+    color: #1c1c1c;
+    box-shadow: 2px 3px 10px #1c1c1c25;
+    transition: all .2s ease-out;
+}
+
+
+@media (orientation:portrait) {
+    .subContain{
+        width: 95%;
+        height: 70%;
+    }
+    .subContain p{
+        font-size: 3.5vw;
+    }
+
+    .subContain button{
+        width: 80%;
+        height: 12%;
+        font-size: 8vw;
+    }
+}
