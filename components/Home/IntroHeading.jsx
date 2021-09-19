@@ -18,9 +18,9 @@ const IntroHeading = () => {
         <>
             {/* video container */}
             <div className={style.container}>
-                <video className={style.video} autoPlay muted loop>
+                {/* <video className={style.video} autoPlay muted loop>
                     <source src={introVideo} type="video/webm" />
-                </video>
+                </video> */}
             </div>
 
             {/* forground opacity */}
