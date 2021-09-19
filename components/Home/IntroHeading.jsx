@@ -3,10 +3,12 @@ import introVideo from "../../public/video/intro.webm";
 import style from './introHeading.module.css';
 // import { BsChevronCompactDown } from 'react-icons/Bs';
 import { onMouseIn,onMouseOut } from "../dependency/Cursor";
-import { useRef } from "react";
+import { useRef,useEffect,useState } from "react";
 
 
 const IntroHeading = () => {
+
+    const [isVideo,setVideo] = useState(false);
 
     const scrollDownContainerRef = useRef();
 
@@ -14,13 +16,19 @@ const IntroHeading = () => {
         scrollDownContainerRef.current.scrollIntoView({ behavior: "smooth" });
     }
 
+    useEffect(()=>{
+       setVideo(true);
+    },[])
+
     return (
         <>
             {/* video container */}
             <div className={style.container}>
-                {/* <video className={style.video} autoPlay muted loop>
+                {
+                    isVideo? <video className={style.video} autoPlay muted loop>
                     <source src={introVideo} type="video/webm" />
-                </video> */}
+                </video>:""
+                }
             </div>
 
             {/* forground opacity */}
