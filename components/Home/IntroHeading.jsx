@@ -1,7 +1,7 @@
 
 import introVideo from "../../public/video/intro.webm";
 import style from './introHeading.module.css';
-import { BsChevronCompactDown } from 'react-icons/Bs';
+import { AiOutlineCaretDown } from 'react-icons/Ai';
 import { onMouseIn,onMouseOut } from "../dependency/Cursor";
 import { useRef,useEffect,useState } from "react";
 import Image from 'next/image';
@@ -52,7 +52,7 @@ const IntroHeading = () => {
                 onClick={scrollDown}
                 onMouseEnter={() => onMouseIn(120, .3)}
                 onMouseLeave={onMouseOut} >
-                    <BsChevronCompactDown className={style.downIcon} />
+                    <AiOutlineCaretDown className={style.downIcon} />
                 </div>
             </div>
 
