@@ -1,7 +1,7 @@
 
 import introVideo from "../../public/video/intro.webm";
 import style from './introHeading.module.css';
-import { FaCalendar } from 'react-icons/fa';
+import { BsChevronCompactDown } from 'react-icons/bs';
 import { onMouseIn,onMouseOut } from "../dependency/Cursor";
 import { useRef,useEffect,useState } from "react";
 import Image from 'next/image';
@@ -52,7 +52,7 @@ const IntroHeading = () => {
                 onClick={scrollDown}
                 onMouseEnter={() => onMouseIn(120, .3)}
                 onMouseLeave={onMouseOut} >
-                    <FaCalendar className={style.downIcon} />
+                    <BsChevronCompactDown className={style.downIcon} />
                 </div>
             </div>
 
