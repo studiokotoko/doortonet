@@ -7,6 +7,7 @@ import { useRef,useEffect,useState } from "react";
 import Image from 'next/image';
 
 const headImage = require('../../public/img/homeHead.webp');
+var time = 15000;
 
 const IntroHeading = () => {
 
@@ -19,8 +20,10 @@ const IntroHeading = () => {
     }
 
     useEffect(()=>{
-        console.log("get it")
-       setVideo(true);
+        setTimeout(()=>{
+            setVideo(true);
+            time=0;
+        },time)
     },[])
 
     return (
