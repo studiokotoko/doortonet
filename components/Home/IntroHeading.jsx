@@ -19,6 +19,7 @@ const IntroHeading = () => {
     }
 
     useEffect(()=>{
+        console.log("get it")
        setVideo(true);
     },[])
 
@@ -27,10 +28,10 @@ const IntroHeading = () => {
             {/* video container */}
             <div className={style.container}>
                 {
-                    // isVideo? <video className={style.video} autoPlay muted loop>
-                    // <source src={introVideo} type="video/webm" />
-                    //  </video>:
-                    //  <Image src={headImage} alt="image"/>
+                    isVideo? <video className={style.video} autoPlay muted loop>
+                    <source src={introVideo} type="video/webm" />
+                     </video>:
+                     <Image src={headImage} alt="image"/> 
                 }
             </div>
 
