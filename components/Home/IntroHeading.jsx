@@ -7,7 +7,7 @@ import { useRef,useEffect,useState } from "react";
 import Image from 'next/image';
 
 const headImage = require('../../public/img/homeHead.webp');
-var time = 15000;
+var time = 7000;
 
 const IntroHeading = () => {
 
