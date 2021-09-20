@@ -4,7 +4,9 @@ import style from './introHeading.module.css';
 // import { BsChevronCompactDown } from 'react-icons/Bs';
 import { onMouseIn,onMouseOut } from "../dependency/Cursor";
 import { useRef,useEffect,useState } from "react";
+import Image from 'next/image';
 
+const headImage = require('../../public/img/homeHead.webp');
 
 const IntroHeading = () => {
 
@@ -27,7 +29,8 @@ const IntroHeading = () => {
                 {
                     isVideo? <video className={style.video} autoPlay muted loop>
                     <source src={introVideo} type="video/webm" />
-                </video>:""
+                     </video>:
+                     <Image src={headImage} alt="image"/>
                 }
             </div>
 
