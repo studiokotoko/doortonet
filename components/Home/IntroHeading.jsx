@@ -7,7 +7,7 @@ import { useRef,useEffect,useState } from "react";
 import Image from 'next/image';
 
 const headImage = require('../../public/img/homeHead.webp');
-var time = 7000;
+var time = 10000;
 
 const IntroHeading = () => {
 
@@ -20,10 +20,11 @@ const IntroHeading = () => {
     }
 
     useEffect(()=>{
-        setTimeout(()=>{
+        if(time==0)setVideo(true);
+        else setTimeout(()=>{
             setVideo(true);
             time=0;
-        },time)
+        },time);
     },[])
 
     return (
@@ -33,8 +34,7 @@ const IntroHeading = () => {
                 {
                     isVideo? <video className={style.video} autoPlay muted loop>
                     <source src={introVideo} type="video/webm" />
-                     </video>:
-                     <Image src={headImage} alt="image"/> 
+                     </video>:"" 
                 }
             </div>
 
