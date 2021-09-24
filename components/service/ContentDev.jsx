@@ -3,7 +3,7 @@ import Image from 'next/image';
 import style from './Content.module.css';
 import { onMouseIn,onMouseOut } from "../dependency/Cursor";
 
-const imgDevelopment = require('../../public/img/serverDevelopment.webp');
+const imgDevelopment = require('../../public/img/service/dev0.webp');
 
 
 

@@ -40,19 +40,19 @@ button:hover{
 
 p{
   transition: all .2s ease-out;
-  text-align: justify;
+  text-align: center;
 }
 
 p:hover{
   letter-spacing: .1vw;
+  word-spacing: .3vw;
 }
 
 h1{
-  transition: all .8s ease-out;
-  text-align: justify;
+  transition: all .6s ease-out;
 }
 
 h1:hover{
-  letter-spacing: .2vw;
+  letter-spacing: .6vw;
   word-spacing: .4vw;
 }

@@ -37,6 +37,8 @@ li.list_active{
     padding: 10px;
     margin: 0px 10px;
     transition: all .4s ease-out;
+    padding-bottom: 2px;
+    border-bottom: 3px solid rgb(66, 126, 161);
 }
 
 .list_active:hover{
